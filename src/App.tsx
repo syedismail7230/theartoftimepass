@@ -22,7 +22,7 @@ export default function App() {
     for (let i = 1; i <= FRAME_COUNT; i++) {
       const img = new Image();
       const frameNum = i.toString().padStart(3, '0');
-      img.src = `/images/ezgif-frame-${frameNum}.jpg`;
+      img.src = `${import.meta.env.BASE_URL}images/ezgif-frame-${frameNum}.jpg`;
       
       img.onload = () => {
         loadedCount++;
